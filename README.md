@@ -1,7 +1,9 @@
 <div align="center">
+    <video src="media/video.mp4" controls loop muted playsinline width="640"></video>
+</div>
 
-<video src="media/video.mp4" controls loop muted playsinline width="640"></video>
-
+<div align="center" style="margin-top: 40px;">
+    <img src="media/logo.jpg" alt="TSOS Logo" width="240">
 </div>
 
 <div align="center">
@@ -115,14 +117,3 @@ docker run -p 8000:8000 --env-file .env tsos
 4. Выполните `POST /api/v1/analyze`, передав видеофайл.
 5. Сразу после этого можно вызвать `GET /api/v1/tasks/{task_id}` — скопируйте `task_id` из ответа и вставьте в поле параметра.
 6. Для live-метрик откройте [http://localhost:8000/metrics](http://localhost:8000/metrics) или используйте `/docs` → `GET /metrics`.
-
-### Быстрый тест OpenRouter (без изображений)
-```bash
-export OPENROUTER_API_KEY=sk-or-...   # PowerShell: setx OPENROUTER_API_KEY "sk-or-..."
-python scripts/test_openrouter.py
-```
-Скрипт отправляет простой текст “Привет, расскажи шутку!” и выводит ответ модели. Удобно, чтобы проверить корректность ключа без запуска всего пайплайна.
-
-<div align="center" style="margin-top: 40px;">
-    <img src="media/logo.jpg" alt="TSOS Logo" width="240">
-</div>
