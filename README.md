@@ -1,6 +1,6 @@
 <div align="center">
 
-<video src="media/video.MP4" controls loop muted playsinline width="640"></video>
+<video src="media/video.mp4" controls loop muted playsinline width="640"></video>
 
 </div>
 
